@@ -31,7 +31,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ### Links
 
 - Solution URL: [solution URL](https://github.com/torekuislam/Frontend-Mentor/tree/master/social-links-profile-main)
-- Live Site URL: [live site URL](https://recipe-page-mai.netlify.app/)
+- Live Site URL: [live site URL](https://social-links-profile-main-torekul.netlify.app/)
 
 ## My process
 
