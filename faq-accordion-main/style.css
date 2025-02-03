@@ -1,0 +1,134 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-pink: hsl(275, 100%, 97%);
+    --Grayish-purple: hsl(292, 16%, 49%);
+    --Dark-purple: hsl(292, 42%, 14%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Work Sans", serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--Dark-purple);
+    background-color: var(--Light-pink);
+}
+
+.top-bacgrund {
+    position: absolute;
+    height: 40vh;
+    width: 100%;
+    background: url(./assets/images/background-pattern-desktop.svg) bottom no-repeat;
+    background-size: cover;
+}
+
+.main-contanar {
+    padding: 35px;
+    padding-right: 40px;
+    border-radius: 10px;
+
+    margin: 20vh auto 20vh auto;
+    width: 90%;
+    max-width: 530px;
+    background-color: var(--White);
+    z-index: 1;
+}
+
+.header h1 {
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+.header h1 img {
+    width: 33px;
+    margin-right: 18px;
+}
+
+.main-contanar h3 {
+    margin: 14px 0;
+    font-size: 15.5px;
+    width: 90%;
+    cursor: pointer;
+}
+
+.main-contanar h3:hover {
+    color: rgb(190, 27, 190);
+}
+
+.para {
+    border-bottom: 1px solid var(--Light-pink);
+}
+
+.secson {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+button {
+    height: 100%;
+    width: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button img {
+    width: 25px;
+
+}
+
+.main-contanar p {
+    color: var(--Grayish-purple);
+    font-size: 14px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+p.displayBlock {
+    display: block;
+}
+
+@media (max-width:500px) {
+    .header h1 {
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .header h1 img {
+        width: 22px;
+        margin-right: 20px;
+    }
+
+    .main-contanar p {
+        font-size: 14.5px;
+    }
+
+    .main-contanar {
+        margin: 150px 0 0 0;
+        padding: 25px 30px 0px 25px;
+
+    }
+
+    .main-contanar h3 {
+        margin: 10px 0;
+        font-size: 16px;
+        width: 80%;
+        cursor: pointer;
+    }
+
+    .top-bacgrund {
+        background: url(./assets/images/background-pattern-mobile.svg) bottom;
+        height: 232.5px;
+
+    }
+}
