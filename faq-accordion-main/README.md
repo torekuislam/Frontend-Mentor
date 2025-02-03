@@ -30,7 +30,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [solution URL](https://github.com/torekuislam/Recipe-page/tree/master/recipe-page-main)
+- Solution URL: [solution URL](https://github.com/torekuislam/Frontend-Mentor/tree/master/faq-accordion-main)
 - Live Site URL: [live site URL](https://eloquent-twilight-f27e77.netlify.app/)
 
 ## My process
@@ -40,6 +40,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 - Semantic HTML5 markup
 - CSS custom properties
 - Mobile-first workflow
+- js
 
 
 **Note: These are just examples. Delete this note and replace the list above with your own choices**
@@ -51,17 +52,15 @@ Responsive Design: Developed skills in creating responsive layouts for various s
 HTML and Semantic Structure: Applied semantic HTML elements for improved accessibility and document structure.
 
 CSS Styling: Gained experience in styling with CSS.
+Javascript: js classlist and mash more.
 
 
 
 
-<!-- ### Useful resources
 
-- [Udemy Webdevlopment](https://www.udemy.com/share/101W9C3@2s1lShiGH32a3OJHMYullps9bvMmvxO_kykXK5ZGloqkGQDHawnryvbZtrMeQ8y81A==/) 
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.** -->
 
 ## Author
 
 - Git Hub - [@torekulislam](https://github.com/torekuislam)
+- LinkedIn -[@torekulislam](https://www.linkedin.com/in/torekul-islam-72748b335/)
 
