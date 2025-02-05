@@ -43,7 +43,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
+- Solution URL: [Solution URL](https://github.com/torekuislam/Frontend-Mentor/tree/master/intro-section-with-dropdown-navigation-main)
 - Live Site URL: [Live site URL](https://stalwart-sunflower-c4a86f.netlify.app/)
 
 ## My process
