@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator App</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <section class="main-logo">
+        <img src="./images/logo.svg" alt="Tip Calculator Logo" />
+      </section>
+    </header>
+
+    <main>
+      <section class="main-content">
+        <!-- Calculation Form -->
+        <section class="calculator-form">
+          <!-- Bill Section -->
+          <section class="bill-section">
+            <div class="bill-title"><h1>Bill</h1></div>
+            <div class="input-container">
+              <div class="icon-dollar">
+                <img src="./images/icon-dollar.svg" alt="Dollar Icon" />
+              </div>
+              <input type="number" placeholder="0" id="bill-input" />
+            </div>
+          </section>
+
+          <!-- Tip Selection -->
+          <section class="tip-section">
+            <div class="tip-title"><h1>Select Tip %</h1></div>
+            <div class="tip-select">
+              <button class="tip-button" value="5">5%</button>
+              <button class="tip-button" value="10">10%</button>
+              <button class="tip-button" value="15">15%</button>
+              <button class="tip-button" value="25">25%</button>
+              <button class="tip-button" value="50">50%</button>
+              <input type="number" placeholder="Custom" id="custom-percent" />
+            </div>
+          </section>
+
+          <!-- Number of People -->
+          <section class="people-section">
+            <div class="people-title">
+              <h1>Number of People</h1>
+              <h1 class="error">Can't be zero</h1>
+            </div>
+            <div class="input-container">
+              <div class="icon-person">
+                <img src="./images/icon-person.svg" alt="Person Icon" />
+              </div>
+              <input type="number" placeholder="0" id="people-input" />
+            </div>
+          </section>
+        </section>
+
+        <!-- Result Display -->
+        <section class="result-form">
+          <div class="result-section">
+            <!-- Tip Amount -->
+            <div class="amount">
+              <div class="amount-title">
+                <h1>Tip Amount</h1>
+                <p>/ person</p>
+              </div>
+              <div><h1 id="amount-value">$0.00</h1></div>
+            </div>
+
+            <!-- Total Amount -->
+            <div class="total">
+              <div class="total-title">
+                <h1>Total</h1>
+                <p>/ person</p>
+              </div>
+              <div><h1 id="total-value">$0.00</h1></div>
+            </div>
+
+            <!-- Reset Button -->
+            <div class="reset">
+              <button id="reset-button">Reset</button>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <section class="footer-info">
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a href="https://www.fiverr.com/torekul_islam">@torekul_islam</a>.
+        </div>
+      </section>
+    </footer>
+  </body>
+  <script src="./script.js"></script>
+</html>

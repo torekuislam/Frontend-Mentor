@@ -1,0 +1,292 @@
+:root {
+    --Strong-cyan: hsl(172, 67%, 45%);
+    --very-dark-cyan: hsl(183, 100%, 15%);
+    --dark-grayish-cyan: hsl(186, 14%, 43%);
+    --grayish-cyan: hsl(184, 14%, 56%);
+    --light-grayish-cyan: hsl(185, 41%, 84%);
+    --very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/* Reset & Base Styles */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Mono", monospace;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--light-grayish-cyan);
+}
+
+/* Header */
+header {
+    margin: 120px 0 60px;
+}
+
+header .main-logo img {
+    width: 80px;
+}
+
+/* Main Container */
+main {
+    width: 95%;
+    max-width: 750px;
+}
+
+/* Card Layout */
+.main-content {
+    padding: 25px;
+    background-color: var(--white);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 35px;
+    transition: grid 20s ease-in;
+}
+
+/* Calculator Form */
+.calculator-form {
+    width: 100%;
+    padding-left: 5px;
+    display: grid;
+    gap: 20px;
+}
+
+.calculator-form h1 {
+    margin-bottom: 7px;
+    font-size: 14px;
+    color: var(--dark-grayish-cyan);
+}
+
+.input-container {
+    background-color: var(--very-light-grayish-cyan);
+    position: relative;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.calculator-form input {
+    width: 100%;
+    border: none;
+    background-color: var(--very-light-grayish-cyan);
+    text-align: right;
+    color: var(--very-dark-cyan);
+    font-weight: 700;
+    font-size: 20px;
+    padding: 6px 10px;
+    border-radius: 5px;
+    outline: none;
+    caret-color: var(--Strong-cyan);
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: var(--grayish-cyan);
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input:hover,
+input:focus {
+    outline: 2px auto var(--Strong-cyan);
+}
+
+/* Input Icons */
+.input-container img {
+    position: absolute;
+    bottom: 33%;
+    left: 15px;
+    width: 11px;
+}
+
+/* Tip Select Buttons */
+.tip-select {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fit, 40px);
+    gap: 12px;
+    justify-content: center;
+}
+
+.tip-button {
+    border: none;
+    background-color: var(--very-dark-cyan);
+    color: var(--white);
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.tip-select .tip-button:hover,
+.tip-select .clicked {
+    background-color: var(--Strong-cyan);
+    color: var(--very-dark-cyan);
+    font-weight: 700;
+}
+
+.tip-select button {
+    font-size: 17px;
+}
+
+/* People Input Error */
+.people-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.people-title .error {
+    display: none;
+    font-weight: normal;
+    color: tomato;
+    animation: shake 0.5s ease-in-out;
+}
+
+input.errorAlert {
+    outline: 1px solid tomato;
+    animation: shake 0.5s ease-in-out;
+}
+
+/* Result Section */
+.result-form {
+    background-color: var(--very-dark-cyan);
+    color: var(--grayish-cyan);
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.result-form .result-section {
+    display: grid;
+    gap: 25px;
+}
+
+.result-form h1 {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.result-form p {
+    font-size: 11px;
+    font-weight: 400;
+}
+
+#amount-value,
+#total-value {
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--Strong-cyan);
+}
+
+.amount,
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Reset Button */
+.reset button {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(183, 40%, 30%);
+    color: var(--very-dark-cyan);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 50px;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+.reset button.active {
+    background-color: var(--Strong-cyan);
+}
+
+.reset button:active {
+    background-color: hsl(172, 75%, 75%);
+}
+
+/* Attribution */
+.attribution {
+    width: 100vw;
+    text-align: center;
+    font-size: 10px;
+    padding: 30px;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--very-dark-cyan);
+}
+
+/* Shake Animation */
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-0.1rem, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(0.1rem, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-0.1rem, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(0.1rem, 0, 0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 665px) {
+    .reset button {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 450px) {
+    .tip-select {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 40px);
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .main-content {
+        border-radius: 25px 25px 0 0;
+        padding-bottom: 40px;
+    }
+
+    .reset button {
+        margin-top: 0;
+    }
+
+    .attribution {
+        background-color: var(--white);
+    }
+}
